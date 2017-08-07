@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 	public float speed;
 	private Transform t;
 	private Vector3 mov;
-
 	// Use this for initialization
 	void Start () {
 		t = this.gameObject.transform;
@@ -28,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
 		else if (Input.GetKey (KeyCode.D)) {
 			mov = Vector3.right * speed;
 		}
-		t.Translate (mov);
+		t.position += mov;
 		mov = Vector3.zero;
 	}
 }

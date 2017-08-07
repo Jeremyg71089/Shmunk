@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{88D2F070-9A9A-C0F8-1346-B5BCF6794455}</ProjectGuid>
+    <ProjectGuid>{7E0E23D6-7B25-1E53-1AFF-17A6AB65D00C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LaserMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
  <Reference Include="UnityEngine.UI">
