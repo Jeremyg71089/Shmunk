@@ -52,7 +52,6 @@ public class PlayerAttack : MonoBehaviour {
 				canFire = true;
 				timeSinceLastFire = 0;
 			}
-			print (timeSinceLastFire);
 		}
 	}
 
