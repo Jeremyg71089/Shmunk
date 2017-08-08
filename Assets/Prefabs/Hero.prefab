@@ -64,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1107561501999114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4319595269914108}
@@ -82,10 +82,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b1e430e73490f42a866a81fb8d32d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserprefab: {fileID: 1013186976609708, guid: 8767f30cf663640429f378a6d519ba01,
+  laserPrefab: {fileID: 1013186976609708, guid: 8767f30cf663640429f378a6d519ba01,
     type: 2}
-  laserspeed: 10
-  laserspawn: {fileID: 4319595269914108}
+  laserSpeed: 7
+  laserSpawn: {fileID: 4319595269914108}
+  rateOfFire: 15
 --- !u!114 &114648681691834724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734d3813164372347b546103284b8079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.15
+  speed: 0.1
 --- !u!212 &212957086728387072
 SpriteRenderer:
   m_ObjectHideFlags: 1
