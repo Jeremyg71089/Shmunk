@@ -7,18 +7,19 @@ public class EnemyStats : BasicStats {
 	// Use this for initialization
 	void Start () {
 		maxHealth = mH;
-		print ("Hi");
+		currentHealth = mH;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (isDead ()) {
-			print ("Enemy is dead");
+		if (isDead()) {
+			print ("Dead");
+			Destroy (gameObject);
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		print ("Enemy Hit");
 		takeDamage (10.0f);
+		print (currentHealth + " " + isDead());
 	}
 }
