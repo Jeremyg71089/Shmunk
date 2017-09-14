@@ -13,13 +13,11 @@ public class EnemyStats : BasicStats {
 	// Update is called once per frame
 	void Update () {
 		if (isDead()) {
-			print ("Dead");
 			Destroy (gameObject);
 		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		takeDamage (10.0f);
-		print (currentHealth + " " + isDead());
 	}
 }
